@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+    install:
+        commands:
+            - echo "Description"
+            - sudo -i pip install --upgrade requests            
+    build:
+        commands:
+            - echo "S3 Upload Beginning"
+            - python -V
+
+    post_build:
+        commands:
+            - echo "Deploy complete"
