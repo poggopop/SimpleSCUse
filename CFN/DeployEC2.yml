@@ -8,7 +8,7 @@ Resources:
   WebInstance:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t3.medium
+      InstanceType: t3.large
       ImageId: !Ref LatestAmiId
       KeyName: gtxmdub
       SecurityGroupIds: [ !ImportValue SCDemoSG ]
